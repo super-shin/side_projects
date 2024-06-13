@@ -1,4 +1,4 @@
-const omdbapiUrl = "http://www.omdbapi.com/";
+const omdbapiUrl = "https://www.omdbapi.com/";
 const apiKey = "48727053";
 
 // Here is 2 other API key if the one above doesn't work anymore:
