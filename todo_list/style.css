@@ -1,0 +1,90 @@
+/* Your customized CSS goes here */
+#root {
+  box-shadow: none;
+}
+.btn-primary {
+  width: 150px;
+}
+.theme-selector {
+  border: 1px solid rgb(138, 138, 138);
+  border-radius: 100%;
+  height: 35px;
+  margin: 0 8px;
+  transition: tranform 150ms ease-in-out, box-shadow 200ms ease-in-out;
+  width: 35px;
+}
+
+.theme-selector:hover {
+  box-shadow: white 0 0 8px;
+  border: white;
+  cursor: pointer;
+}
+
+.theme-selector:active {
+  transform: scale(0.95);
+}
+
+.standard-theme {
+  background-image: linear-gradient(100deg, #575656, #062e3f);
+}
+
+.light-theme {
+  background-image: linear-gradient(100deg, #d4f1ff, #ffffff);
+}
+
+.darker-theme {
+  background-image: linear-gradient(100deg, #000000, #04003b);
+}
+
+#title {
+  border-right: solid 3px rgba(0, 0, 0, 0.75);
+  white-space: pre;
+  overflow: hidden;
+  letter-spacing: 0.20rem;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  max-width: 480px;
+  font-family: 'Anton', sans-serif;
+  font-size: 10vh;
+}
+
+/* Animation */
+#title {
+  animation: animated-text 2s steps(11,end) 0.5s 1 normal both,
+      animated-cursor 750ms steps(11,end) infinite;
+}
+
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0%;}
+  to{width: 424px;}
+}
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0, 0, 0, 0.75);}
+  to{border-right-color: transparent;}
+}
+
+.form-check-input[type=checkbox] {
+  background-color: #8c8c8c;
+  border-color: #d1d1d1;
+  box-shadow: none;
+}
+
+.btn-close {
+  font-size: small;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: transparent;
+}
+
+.container {
+  background-color: transparent;
+}
